@@ -18,6 +18,10 @@ cd SCRIBE
 pip install -r requirements.txt
 ```
 
+## Requirements
+
+API keys for both OpenAI and SerpAPI. The script assumes you have them stored in your environment variables, but you can hardcode them into config.py if you prefer.
+
 ## Usage
 
 SCRIBE requires three main inputs to generate a report:
