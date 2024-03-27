@@ -13,7 +13,7 @@ SCRIBE is a Python-based tool inspired by [gpt-researcher](https://github.com/as
 First, ensure that you have Python 3.6 or newer installed. Then, clone this repository and install the required dependencies:
 
 ```
-git clone <repository-url>
+git clone https://github.com/JSantos1985/SCRIBE
 cd SCRIBE
 pip install -r requirements.txt
 ```
@@ -22,9 +22,9 @@ pip install -r requirements.txt
 
 SCRIBE requires three main inputs to generate a report:
 
-1. **\`src_query\`**: A JSON-formatted search query for the SERP API.
-2. **\`goal\`**: A description of the report's objective.
-3. **\`instructions\`**: Specific guidelines for what the AI agents should focus on during website information retrieval.
+1. **src_query**: A JSON-formatted search query for the SERP API.
+2. **goal**: A description of the report's objective.
+3. **instructions**: Specific guidelines for what the AI agents should focus on during website information retrieval.
 
 Run SCRIBE from the command line by providing the necessary arguments:
 
