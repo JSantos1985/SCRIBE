@@ -12,11 +12,11 @@ SCRIBE is a Python-based tool inspired by [gpt-researcher](https://github.com/as
 
 First, ensure that you have Python 3.6 or newer installed. Then, clone this repository and install the required dependencies:
 
-\`\`\`bash
+```
 git clone <repository-url>
 cd SCRIBE
 pip install -r requirements.txt
-\`\`\`
+```
 
 ## Usage
 
@@ -28,9 +28,9 @@ SCRIBE requires three main inputs to generate a report:
 
 Run SCRIBE from the command line by providing the necessary arguments:
 
-\`\`\`bash
+```
 python main.py '{"q": "Your search query"}' "Your report goal" "Your retrieval instructions"
-\`\`\`
+```
 
 Ensure you replace the placeholders with your actual search query, goal, and instructions.
 
