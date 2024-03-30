@@ -11,7 +11,6 @@ if __name__ == '__main__':
 
     """ 
     EXAMPLE INPUTS
-    goal = "Compile a guide on the best general builds in Baldur's Gate 3, detailing each build's components, strengths, and weaknesses, and include any available community feedback or multimedia resources."
     
     src_query = {
       "q": "Baldur's Gate 3 best builds guide -filetype:pdf",
@@ -19,11 +18,14 @@ if __name__ == '__main__':
     }
     
     instructions = "From this website, retrieve summaries of information on the best builds."
+    
+    goal = "Compile a guide on the best general builds in Baldur's Gate 3, detailing each build's components, strengths, and weaknesses, and include any available community feedback or multimedia resources."
+
     """
 
     if len(sys.argv) > 1:
-      goal = sys.argv[1]
-      src_query = sys.argv[2]
+      src_query = sys.argv[1]
+      goal = sys.argv[2]
       instructions = sys.argv[3]
     else:
       print("Usage: python main.py <goal> '<src_query>' '<instructions>'")
