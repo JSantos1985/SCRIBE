@@ -1,6 +1,13 @@
 from serpapi import GoogleSearch
 
 def search_google(src_query):
+    """
+    Conducts a Google Search using the SERP API.
+
+    Parameters:
+    - src_query (dictionary): a SERP API formatted search query
+    """
+
     search = GoogleSearch(src_query)
 
     src_results_list = []

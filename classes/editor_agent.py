@@ -2,6 +2,13 @@ from config import CLIENT
 import time
 
 class EditorAgent():
+    """
+    Editor Agent class. Includes various editing functions for the various components of the report.
+
+    Parameters:
+    - goal (str): The user goals.
+    """
+
     def __init__(self, goal):
         self.goal = goal
         self.sysprompt = f"""You are an Editor GPT, the final step of a chain of AI agents which aim to provide the user with a comprehensive report on a given topic based on an initial query made by the user. Your task is to harmonize the various parts of the report that were written by independent GPTs and harmonize them into a cohesive document. Due to your limitation on the number of output tokens, you will receive the various parts in chunks, and be given specific directions on how to integrate them into the main document.

@@ -4,14 +4,15 @@ from .aggregate_summaries import aggregate_summaries
 
 def retrieve_summaries(goal, instructions, src_results_list):
     """
-    Takes a list of search results, and a list of aggregated summary chunks,
-    a results count, and a relevant results count.
+    Parallel launch the summary retrieval pipeline. Returns a list of summary chunks, the count of results, and
+    the count of relevant results.
 
     Parameters:
     - goal (str): The user goals.
     - instructions (str): The system prompt for the agents.
     - src_results_list (list): A list of Google search results obtained from the SERP API.
     """
+
     summaries_list = []
     with ThreadPoolExecutor(max_workers=10) as executor:
         # Submit pipeline execution jobs

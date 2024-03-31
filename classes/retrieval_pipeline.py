@@ -5,6 +5,15 @@ from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
 
 class RetrievalPipeline():
+    """
+    Retrieval Pipeline instanceable class. Opens a target web page, scrapes the results, and returns a content summary.
+
+    Parameters:
+    - goal (str): The user goals.
+    - instructions (str): The system prompt for the agents.
+    - src_result (dict): A dictionary containing information about a website ("content" and "url" keys).
+    """
+
     def __init__(self, goal, instructions, task):
         self.task = task
         self.goal = goal
